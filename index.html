@@ -16,6 +16,10 @@
     <meta name="theme-color" content="#fafafa">
 
     <style>
+
+        .active .accordion_toggle {
+            transform: rotate(0deg) !important;
+        }
         span.date {
             color: red;
             padding: 0;
@@ -25,7 +29,7 @@
             display: inline-block;
             background: #808080;
             color: #fff;
-            font-size: 18px;
+            font-size: 16px;
             padding: 6px 20px;
             border: none;
         }
@@ -304,7 +308,7 @@
             display: none;
         }
 
-        .section-three .cards ul li .thumb:hover {
+        .insightsec .cards ul li .thumb:hover {
             transform: scale(1.02);
         }
 
@@ -354,8 +358,9 @@
             height: auto;
         }
         .newsupdates p {
-            height: 15rem;
+            height: 13rem;
             margin-bottom: 0;
+            font-size: 18px !important;
         }
 
         .partnerwithus .title {
@@ -394,12 +399,198 @@
             display: flex;
             align-items: center;
         }
+        .slides.residential .wrap img {
+            transition: 0.5s all ease-in-out;
+        }
+        header {
+            position: absolute;
+        }
+        .slides.residential .wrap .image {
+            height: 20.5rem;
+            overflow: hidden;
+        }
 
+        .slides.residential .wrap:hover img {
+            transform: scale(1.05);
+        }
         .labelgrp label {
             display: flex;
             align-items: center;
         }
-        footer{width:100%;margin:0;padding:3rem 0;background:#dbdbdb}footer .footer-wrap{width:100%;display:flex;justify-content:space-between;align-items:flex-end}footer .footer-wrap .left{width:30%;margin:0px 0 0 0;padding:0px 2.5% 0 0;border-right:1px solid #232d3c;height:100%}footer .footer-wrap .left .sitemap-links{width:100%;display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid #232d3c;padding-bottom:2.5rem}footer .footer-wrap .left .sitemap-links ul li{width:100%;margin:0px 0 1.5rem 0;padding:0px}footer .footer-wrap .left .sitemap-links ul li a{color:#232d3c;text-decoration:none;transition:all 0.3s ease-in-out;font-size:1.1rem;font-weight:500}footer .footer-wrap .left .sitemap-links ul li a:hover{color:red}footer .footer-wrap .left .footer-logo{width:100%;padding-top:2.5rem}footer .footer-wrap .left .footer-logo img{width:100%}footer .footer-wrap .mid{width:58%;margin:0;padding:0 1.5%}footer .footer-wrap .mid p{font-size:1.5rem;font-weight:1.2rem;font-weight:600}footer .footer-wrap .right{width:10%}footer .footer-wrap .right .contact{width:100%;margin:0px 0 1rem 0;padding:0}footer .footer-wrap .right .contact a{background:red;color:#fff;text-decoration:none;display:block;transition:all 0.3s ease-in-out;text-align:center;padding:0.7rem}footer .footer-wrap .right .contact a:hover{background:#232d3c}footer .footer-wrap .right .social{width:100%;margin:0px;padding:0px}footer .footer-wrap .right .social ul{display:flex;justify-content:space-between;align-items:center}footer .footer-wrap .right .social ul li{margin:0;padding:0px}footer .footer-wrap .right .social ul li a{display:inline-block;width:30px;height:30px;background:#232d3c;text-decoration:none;color:#fff;text-align:center;vertical-align:middle;line-height:30px;border-radius:30px;transition:all 0.3s ease-in-out}footer .footer-wrap .right .social ul li a:hover{background:red}.btm-footer{width:100%;margin:0;padding:2rem 0 4rem 0;display:flex;justify-content:space-between;align-items:center;background:#232d3c}.btm-footer .left{width:40%;color:#fff;font-size:1rem;color:#fff}.btm-footer .right{width:55%;margin:0;padding:0;display:flex;justify-content:flex-end;align-items:center}.btm-footer .right ul{display:flex;justify-content:flex-end;align-items:center}.btm-footer .right ul li{margin:0;padding:0 0.5rem;color:#fff}.btm-footer .right ul li:last-child{margin-right:0}.btm-footer .right ul li a{color:#fff;text-decoration:none}.spotlight{padding:0}.spotlight .slider{width:100%}.spotlight .slider h3{font-size:7rem;font-weight:700;line-height:1;font-family:"noto_sansextracondensed_bold";color:#fff;text-transform:uppercase;transform:translateY(-20%)}.spotlight .slider h3 span{display:block;transform:translateX(20%)}
+        footer{width:100%;margin:0;padding:3rem 0;background:#dbdbdb}footer .footer-wrap{width:100%;display:flex;justify-content:space-between;align-items:flex-end}footer .footer-wrap .left{width:30%;margin:0px 0 0 0;padding:0px 2.5% 0 0;border-right:1px solid #232d3c;height:100%}footer .footer-wrap .left .sitemap-links{width:100%;display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid #232d3c;padding-bottom:2.5rem}footer .footer-wrap .left .sitemap-links ul li{width:100%;margin:0px 0 1.5rem 0;padding:0px}footer .footer-wrap .left .sitemap-links ul li a{color:#232d3c;text-decoration:none;transition:all 0.3s ease-in-out;font-size:1.1rem;font-weight:500}footer .footer-wrap .left .sitemap-links ul li a:hover{color:red}footer .footer-wrap .left .footer-logo{width:100%;padding-top:2.5rem}footer .footer-wrap .left .footer-logo img{width:100%}footer .footer-wrap .mid{width:58%;margin:0;padding:0 1.5%}footer .footer-wrap .mid p{font-size:1.5rem;font-weight:1.2rem;font-weight:600}footer .footer-wrap .right{width:10%}footer .footer-wrap .right .contact{width:100%;margin:0px 0 1rem 0;padding:0}footer .footer-wrap .right .contact a{background:red;color:#fff;text-decoration:none;display:block;transition:all 0.3s ease-in-out;text-align:center;padding:0.7rem}footer .footer-wrap .right .contact a:hover{background:#232d3c}footer .footer-wrap .right .social{width:100%;margin:0px;padding:0px}footer .footer-wrap .right .social ul{display:flex;justify-content:space-between;align-items:center}footer .footer-wrap .right .social ul li{margin:0;padding:0px}footer .footer-wrap .right .social ul li a{display:inline-block;width:30px;height:30px;background:#232d3c;text-decoration:none;color:#fff;text-align:center;vertical-align:middle;line-height:30px;border-radius:30px;transition:all 0.3s ease-in-out}footer .footer-wrap .right .social ul li a:hover{background:red}.btm-footer{width:100%;margin:0;padding:2rem 0 2rem 0;display:flex;justify-content:space-between;align-items:center;background:#000}.btm-footer .left{width:40%;color:#fff;font-size:1rem;color:#fff}.btm-footer .right{width:55%;margin:0;padding:0;display:flex;justify-content:flex-end;align-items:center}.btm-footer .right ul{display:flex;justify-content:flex-end;align-items:center}.btm-footer .right ul li{margin:0;padding:0 0.5rem;color:#fff}.btm-footer .right ul li:last-child{margin-right:0}.btm-footer .right ul li a{color:#fff;text-decoration:none}.spotlight{padding:0}.spotlight .slider{width:100%}.spotlight .slider h3{font-size:7rem;font-weight:700;line-height:1;font-family:"noto_sansextracondensed_bold";color:#fff;text-transform:uppercase;transform:translateY(-20%)}.spotlight .slider h3 span{display:block;transform:translateX(20%)}
+        .productsec .cards ul li .caption {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        .productsec .cards ul li .caption:hover {
+            color: red;
+        }
+        .arrowbtnnav {
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0rem;
+        }
+
+        .arrowbtnnav .carousel_dots {
+            width: auto;
+            padding: 0;
+        }
+
+        .arrowbtnnav button.carousel_btn {
+            position: relative;
+            bottom: -10px;
+        }
+
+        .arrowdot {
+            display: flex;
+            align-items: center;
+            height: 32px;
+            padding: 0 8px;
+            background: #fff;
+            border-radius: 30px;
+        }
+
+        .arrowbtnnav button.carousel_btn.prev {
+            left: 0;
+        }
+
+        .arrowbtnnav button.carousel_btn.next {
+            left: 0;
+        }
+        .cardsput form input[type=submit] {
+            width: 162px;
+            height: 55px;
+            border-radius: 0;
+            margin-top: 2rem;
+        }
+        .labelgrp label span.radiodesign {
+            width: 1rem;
+            height: 1rem;
+            display: inline-block;
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin-right: 0.5rem;
+            position: relative;
+        }
+
+        .labelgrp label {
+            position: relative;
+        }
+
+        .labelgrp label input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .labelgrp label span.radiodesign:before {
+            width: 6px;
+            height: 6px;
+            background: red;
+            position: absolute;
+            top: 4px;
+            content: "";
+            border-radius: 30px;
+            right: 4px;
+            display: none;
+        }
+
+        .labelgrp label input:checked ~ span.radiodesign:before {
+            display: inline-block;
+        }
+        .cardsput form .terms input#terms {
+            width: 18px;
+            height: 18px;
+            margin-top: -3px;
+        }
+        footer .footer-wrap .mid p {
+            font-size: 20px;
+            font-weight: 400;
+            position: relative;
+            top: 1rem;
+        }
+        .section-cuttingedge .btngrp button {
+            background: red;
+        }
+
+        .section-cuttingedge .btngrp button.outline {
+            background: transparent;
+            color: red;
+            display: flex;
+            align-items: center;
+            width: auto;
+            padding: 0;
+            margin-left: 20px;
+        }
+
+        .section-cuttingedge .btngrp button.outline img {
+            width: 13px;
+            margin-right: 5px;
+        }
+
+        .section-cuttingedge .btngrp {
+            display: flex;
+        }
+
+        .section-cuttingedge .title {
+            margin-bottom: 3rem;
+        }
+
+        .carousel-main .carousel-cell {
+        width: 100%;
+        height: 360px;
+        font-size: 5rem;
+        }
+
+        .carousel-nav {
+        width: 300px;
+        transform: rotate(90deg) translate(30px, -100%);
+        transform-origin: left top;
+        }
+        @media screen and (max-width: 1200px) {
+        .carousel-nav {
+            transform: rotate(90deg) translate(30px, -50%);
+        }
+        }
+        .carousel-nav .carousel-cell {
+        /* transform: rotate(-90deg); */
+        width: 100px;
+        height: 200px;
+        cursor: pointer;
+        margin-right: 1rem;
+        font-size: 1.4rem;
+        /* selected cell */
+        }
+        .carousel-nav .carousel-cell img {
+            /* transform: rotate(270deg); */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel-nav .carousel-cell:before {
+        transform: rotate(-90deg);
+        }
+        .carousel-nav .flickity-prev-next-button {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        }
+        .carousel-nav .flickity-prev-next-button.previous {
+        left: -40px;
+        }
+        .carousel-nav .flickity-prev-next-button.next {
+        right: -40px;
+        }
+        .carousel-nav .carousel-cell {
+            filter: grayscale(1);
+        }
+
+        .carousel-nav .carousel-cell.is-selected.is-nav-selected {
+            filter: none;
+        }
+        .section-cuttingedge .btngrp button:hover, .arrowbtnnav button:hover{
+            background-color: #000 !important;
+        }
     </style>
 </head>
 
@@ -518,11 +709,54 @@
         <a href="https://www.youtube.com/watch?v=Fr56GJdOFQk" data-fancybox="video-gallery"><img src="img/section2.jpg" alt="" class="img-fluid"></a>
     </section>
 
-    <section class="section-two">
-        <img src="img/section3.jpg" alt="" class="img-fluid">
+    <section class="section-two section-cuttingedge">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="title">
+                        <span>At the cutting-edge</span>
+                        Solutions
+                    </div>
+                    <h3>e-F@ctory Overview</h3>
+                    <p>Mitsubishi Electric utilizes digital technology to connect the entire manufacturing life cycle with the aim of optimal and flexible manufacturing to address uncertainty.</p>
+                    <div class="btngrp">
+                        <button>Know More</button>
+                        <button class="outline"><img src="img/arrowred.png" alt="View"> View All</button>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2">
+                   <div class="carousel carousel-nav" 
+                        data-flickity='{
+                          "asNavFor": ".carousel-main",
+                          "draggable": false,
+                          "percentPosition": false,
+                          "groupCells": "100%",
+                          "pageDots": false,
+                          "prevNextButtons": false
+                        }'>
+                    <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
+                    <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
+                    <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="carousel carousel-main"
+                         data-flickity='{
+                           "contain": true,
+                           "pageDots": false,
+                           "prevNextButtons": false
+                         }'>
+                      <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
+                      <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
+                      <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </section>
 
-    <section class="section-three">
+    <section class="section-three productsec">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -678,7 +912,7 @@
         </div>
     </section>
 
-    <section class="section-three">
+    <section class="section-three insightsec">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -694,7 +928,7 @@
                                         <div class="caption">Invovations</div>
                                         <span class="date">09/March/2022</span>
                                         <p>What Is The Importance of <br /> Elevator Modernization?</p>
-                                        <button>know more</button>
+                                        <button>Know More</button>
                                     </div>
                                 </div>
                             </li>
@@ -705,7 +939,7 @@
                                         <div class="caption">Solutions</div>
                                         <span class="date">15/june/2023</span>
                                         <p>Mitsubishi Electric Supports The <br />Stellar Growth of Data Centres...</p>
-                                        <button>know more</button>
+                                        <button>Know More</button>
                                     </div>
                                 </div>
                             </li>
@@ -716,7 +950,7 @@
                                         <div class="caption">Society</div>
                                         <span class="date">15/june/2022</span>
                                         <p>Mitsubishi Electric Strengthens its <br />CSR Initiatives in India</p>
-                                        <button>know more</button>
+                                        <button>Know More</button>
                                     </div>
                                 </div>
                             </li>
@@ -727,7 +961,7 @@
                                         <div class="caption">Info Hub</div>
                                         <span class="date">02/March/2023</span>
                                         <p>How to Save Electricity While Using <br />Air Conditioners?</p>
-                                        <button>know more</button>
+                                        <button>Know More</button>
                                     </div>
                                 </div>
                             </li>
@@ -738,7 +972,7 @@
         </div>
     </section>
 
-    <section class="section-three">
+    <section class="section-three" style="background-color: #f3f3f3;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -815,7 +1049,14 @@
                                     <div class="leftpart">
                                         <div class="things">
                                             <h2>Marvel Technology & Tools PVT. LTD.</h2>
-                                            <span class="accordion_toggle">^</span>
+                                            <span class="accordion_toggle" style="transform: rotate(180deg);">
+                                                <svg fill="#000000" height="1rem" width="1rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    viewBox="0 0 330 330" xml:space="preserve">
+                                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <div class="lefttext">
                                             <p>World's Largest Tractor Manufracturer uses cutting edge Factory Auttomation Solution to rise, accepting no limits.</p>
@@ -825,7 +1066,14 @@
                                     <div class="leftpart">
                                         <div class="things">
                                             <h2>Mahindra & Mahindra FES(Tractor)</h2>
-                                            <span class="accordion_toggle">^</span>
+                                            <span class="accordion_toggle" style="transform: rotate(180deg);">
+                                                <svg fill="#000000" height="1rem" width="1rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    viewBox="0 0 330 330" xml:space="preserve">
+                                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <div class="lefttext">
                                             <p>World's Largest Tractor Manufracturer uses cutting edge Factory Auttomation Solution to rise, accepting no limits.</p>
@@ -835,7 +1083,14 @@
                                     <div class="leftpart">
                                         <div class="things">
                                             <h2>Striving towards Clean Energy</h2>
-                                            <span class="accordion_toggle">^</span>
+                                            <span class="accordion_toggle" style="transform: rotate(180deg);">
+                                                <svg fill="#000000" height="1rem" width="1rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    viewBox="0 0 330 330" xml:space="preserve">
+                                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <div class="lefttext">
                                             <p>World's Largest Tractor Manufracturer uses cutting edge Factory Auttomation Solution to rise, accepting no limits.</p>
@@ -857,7 +1112,14 @@
                                     <div class="leftpart">
                                         <div class="things">
                                             <h2>Marvel Technology & Tools PVT. LTD.</h2>
-                                            <span class="accordion_toggle">^</span>
+                                            <span class="accordion_toggle" style="transform: rotate(180deg);">
+                                                <svg fill="#000000" height="1rem" width="1rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    viewBox="0 0 330 330" xml:space="preserve">
+                                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <div class="lefttext">
                                             <p>World's Largest Tractor Manufracturer uses cutting edge Factory Auttomation Solution to rise, accepting no limits.</p>
@@ -867,7 +1129,14 @@
                                     <div class="leftpart">
                                         <div class="things">
                                             <h2>Mahindra & Mahindra FES(Tractor)</h2>
-                                            <span class="accordion_toggle">^</span>
+                                            <span class="accordion_toggle" style="transform: rotate(180deg);">
+                                                <svg fill="#000000" height="1rem" width="1rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    viewBox="0 0 330 330" xml:space="preserve">
+                                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <div class="lefttext">
                                             <p>World's Largest Tractor Manufracturer uses cutting edge Factory Auttomation Solution to rise, accepting no limits.</p>
@@ -877,7 +1146,14 @@
                                     <div class="leftpart">
                                         <div class="things">
                                             <h2>Striving towards Clean Energy</h2>
-                                            <span class="accordion_toggle">^</span>
+                                            <span class="accordion_toggle" style="transform: rotate(180deg);">
+                                                <svg fill="#000000" height="1rem" width="1rem" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                    viewBox="0 0 330 330" xml:space="preserve">
+                                                <path id="XMLID_224_" d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                                                    l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                                                    C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z"/>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <div class="lefttext">
                                             <p>World's Largest Tractor Manufracturer uses cutting edge Factory Auttomation Solution to rise, accepting no limits.</p>
@@ -894,16 +1170,19 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Carousel Navigation -->
-                        <button class="carousel_btn prev">←</button>
-                        <button class="carousel_btn next">→</button>
-
-                        <!-- Dots Navigation -->
-                        <div class="carousel_dots">
-                            <span class="dot active"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
+                        <div class="arrowbtnnav">                            
+                            <button style="background-color: red;">View All</button>
+                            <div class="arrowdot">
+                                <!-- Carousel Navigation -->
+                                <button class="carousel_btn prev">←</button>
+                                    <!-- Dots Navigation -->
+                                    <div class="carousel_dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                <button class="carousel_btn next">→</button>
+                            </div>
                         </div>
                     </div>
 
@@ -1043,8 +1322,8 @@
                                 <!--<label for="phone">Phone Number:</label>-->
                                 <p>I am interested in</p>
                                 <div class="labelgrp">
-                                    <label for=""><input type="radio" name="" id="">Solution</label>
-                                    <label for=""><input type="radio" name="" id="">Product</label>
+                                    <label for="radio"><input type="radio" name="radio" id="radio"> <span class="radiodesign"></span>Solution</label>
+                                    <label for="Product"><input type="radio" name="radio" id="Product"> <span class="radiodesign"></span>Product</label>
                                 </div>
                             </div>
 
@@ -1094,13 +1373,13 @@
                       <li><a href="#">News</a></li>
                     </ul>
                     <ul>
+                      <li><a href="#">Sustainability</a></li>
                       <li><a href="#">Media Centre</a></li>
-                      <li><a href="#">About Us</a></li>
                       <li><a href="#">Awards and Prizes</a></li>
                       <li><a href="#">Career</a></li>
                     </ul>
                   </div>
-                  <div class="footer-logo"><img src="img/footer-logo.jpg" alt=""></div>
+                  <div class="footer-logo"><img src="img/footer-logo.png" alt=""></div>
                 </div>
       
                 <div class="mid">
@@ -1147,6 +1426,9 @@
     <!--<section class="section-two p-0">
     <img src="img/btm.jpg" alt="" class="img-fluid">
    </section>-->
+   <div class="floatsticky" style="position: fixed;top: 40%; right: 0;">
+    <img src="img/floaticon.jpg" alt="floaticon">
+   </div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
@@ -1216,10 +1498,18 @@
 
     </script>
     <script>
-        $(document).ready(function() {
-            // On click of .things element, toggle the visibility of .lefttext using slideToggle
-            $('.things').on('click', function() {
-                $(this).next('.lefttext').slideToggle();
+       $(document).ready(function(){
+            $(".things").click(function(){
+                // Slide up any visible lefttext and remove active class
+                $(".lefttext:visible").slideUp();
+                $(".things").removeClass("active");
+                
+                // Check if the next lefttext is hidden, then slide it down
+                var lefttext = $(this).next(".lefttext");
+                if (lefttext.is(":hidden")) {
+                    lefttext.slideDown();
+                    $(this).addClass("active");
+                }
             });
         });
     </script>
