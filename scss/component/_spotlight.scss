@@ -1,0 +1,69 @@
+.spotlight{
+    padding: 0;
+    .slider{
+        width: 100%;
+    }
+    .content{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @include mobile{
+            position: static;
+            transform: none;
+        }
+        h3{
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1;
+            @include mobile{
+                color: $black;
+                font-size: 1.8rem;
+                text-align: center;
+                margin-top: 1.5rem;
+            }
+            span{
+                display: block;
+            }
+        }
+        
+    }
+    
+    .flickity-page-dots{
+        bottom: 25px;
+        z-index: 2;
+        text-align: right;
+        padding: 0 2rem;
+        .dot{
+            background: $white;
+            border: 1px solid $white;
+            &.is-selected{
+                background: $red;
+            }
+        }
+        
+    }
+.right-bottom-disclaimer {
+        position: absolute;
+        left: 0rem;
+        bottom: 0;
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 1rem;
+        padding-top: 4rem;
+        padding-right: 55%;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+        z-index: 1;
+    }
+}
+.flickity-button:focus{
+    outline: none;
+    border: none;
+    box-shadow:none;
+    background: none;
+}
+.flickity-button{
+    background: none;
+}

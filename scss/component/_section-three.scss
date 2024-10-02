@@ -1,0 +1,114 @@
+.section-three{
+    .cards{
+        width: 100%;
+        margin: 3rem 0;
+        padding: 0px;
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 2.5rem;
+            grid-row-gap: 2.5rem;
+            li{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                .thumb{
+                    width: 100%;
+                    position: relative;
+                    .image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .expand{
+                        width: 50px;
+                        height: 50px;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        background: #f3f3f3;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        border: 1px solid #ccc;
+                        font-size: 1.4rem;
+                        transition: $base-transition;
+                        &:hover{
+                            color: $white;
+                            background: $red;
+                        }
+                        &.open{
+                            color: $white;
+                            background: $red;
+                        }
+                    }
+                    .options{
+                        width: auto;
+                        position: absolute;
+                        top: 100%;
+                        left: calc(100% - 50px);
+                        display: none;
+                        transition: $base-transition;
+                        z-index: 9;
+                        &.active{
+                            display: block;
+                        }
+                        ul{
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            background: #f3f3f3;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            flex-direction: column;
+                            grid-column-gap: 0rem;
+                            grid-row-gap: 0rem;
+                            li{
+                                width: 100%;
+                                white-space: nowrap;
+                                padding: 0.8rem 1rem;
+                                color: $black;
+                                transition: $base-transition;
+                                position: relative;
+                                &:hover{
+                                    background: $red;
+                                    color: $white;
+                                }
+                                &::after{
+                                    content: "";
+                                    width: 90%;
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 0;
+                                    transform: translateX(-50%);
+                                    height: 2px;
+                                    background: #ccc;
+                                }
+
+                            }
+                        }
+                    }
+                }
+                .caption{
+                    padding: 1rem 0;
+                    font-size: 1.4rem;
+                    color: $black;
+                    transition: $base-transition;
+                    font-weight: 600;
+                }
+                &:hover{
+                    .caption{
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
