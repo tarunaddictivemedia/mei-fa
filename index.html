@@ -207,7 +207,9 @@
             margin-top: 20px;
             padding-bottom: 2rem;
         }
-
+        .lefttext p, .section-three .cards ul li p {
+            font-size: 18px !important;
+        }
         .dot {
             height: 10px;
             width: 10px;
@@ -289,10 +291,20 @@
             box-shadow: 0px 0px 4px rgb(0 0 0 / 13%);
             transition: 0.5s all ease-in-out;
         }
-
-        .section-three .cards ul li .caption {
+        .cta, button {
+            width: 160px;
+            height: 55px;
+            justify-content: center !important;
+            display: flex !important;
+            font-size: 16px;
+            align-items: center !important;
+        }
+        .carousel_btn {
+            width: auto;height: auto;
+        }
+        .section-three .cards ul li .caption, .section-cuttingedge h3 {
             padding: 0;
-            font-size: 1.875rem;
+            font-size: 26px;
         }
 
         .section-three .cards ul li span.date {
@@ -439,7 +451,9 @@
 
         .arrowbtnnav button.carousel_btn {
             position: relative;
-            bottom: -9px;
+            bottom: 1.5px;
+            transform: none;
+            height: auto;
         }
 
         .arrowdot {
@@ -537,21 +551,24 @@
         .section-cuttingedge .title {
             margin-bottom: 3rem;
         }
-        button.carousel_btn:hover {
+        .arrowdot button.carousel_btn:hover {
             background: transparent !important;
             color: red;
         }
         .carousel-main .carousel-cell {
         width: 100%;
-        height: 360px;
+        height: 470px;
         font-size: 5rem;
         }
         .section-cuttingedge .btngrp button.outline:hover {
             background: transparent !important;
         }
+        .carousel-main .carousel-cell img {
+            width: 100%;height: 100%; object-fit: cover;
+        }
         .carousel-nav {
-        width: 380px;
-        transform: rotate(90deg) translate(0px, -100%);
+        width: 350px;
+        transform: rotate(90deg) translate(60px, -120%);
         transform-origin: left top;
         }
         @media screen and (max-width: 1200px) {
@@ -562,7 +579,7 @@
         .carousel-nav .carousel-cell {
         /* transform: rotate(-90deg); */
         width: 100px;
-        height: 200px;
+        height: 150px;
         cursor: pointer;
         margin-right: 1rem;
         font-size: 1.4rem;
@@ -598,6 +615,112 @@
         .section-cuttingedge .btngrp button:hover, .arrowbtnnav button:hover{
             background-color: #000 !important;
         }
+        header .header-menu a,  header .header-icons a.header-cta, .btm-footer .right ul li a, .btm-footer .left {
+            font-size: 16px;
+        }
+        header .header-icons {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+        a.stretched-link {
+            cursor: pointer;
+        }
+        .search-container {
+            width: 150px;
+            margin: 0px auto;
+            border-right: 1px solid #333;
+            margin-right: 10px;
+            padding-right: 5px;
+        }
+        .searchbox {
+            position: relative;
+            height: 30px;
+            /* min-width: auto; */
+            width: 100%;
+            float: right;
+            overflow: hidden;
+            -webkit-transition: width 0.3s;
+            -moz-transition: width 0.3s;
+            -ms-transition: width 0.3s;
+            -o-transition: width 0.3s;
+            transition: width 0.3s;
+            padding: 0;
+            border: none !important;
+            background: transparent;
+        }
+        .searchbox-input {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border: 0 !important;
+            outline: 0;
+            width: 0px !important;
+            height: 30px;
+            margin: 0 !important;
+            padding: 0 !important;
+            font-size: 1rem;
+            color: #232d3c;
+            background: none;
+            border-bottom: 2px solid #000 !important;
+            border-radius: 0px !important;
+        }
+        .searchbox-icon {
+            width: 30px;
+            height: 30px;
+            display: block;
+            position: absolute;
+            top: 0;
+            font-size: 1.1vw;
+            right: 0;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            outline: 0;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            color: #333;
+        }
+        .searchbox-open .searchbox-input, .searchbox-open {
+            width: 100% !important;
+        }
+        .searchbox-input::placeholder, .searchbox-input {
+            color: #333;
+        }
+        .newsupdates .image {
+            height: 13rem;
+            overflow: hidden;cursor: pointer;
+        }
+
+        .newsupdates .image img {
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+        section.section-two.Decarbonizingcontent {
+            padding: 0;
+        }
+
+        section.section-two.Decarbonizingcontent .col-lg-4 {
+            padding: 3rem;
+        }
+
+        section.section-two.Decarbonizingcontent .col-lg-4 p {
+            font-size: 17px;
+            color: #232d3c;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .Decarbonizingcontent img.img-fluid {
+            height: 100%;
+            object-fit: cover;
+        }
+        .newsupdates .image:hover img {
+            transform: scale(1.03);
+        }
     </style>
 </head>
 
@@ -621,12 +744,15 @@
                     <a href="#">Contact Us</a>
                 </div>
                 <div class="header-icons">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+                    <div class="search-container">
+                      <form class="searchbox">
+                        <input type="text" placeholder="Search" name="search" class="searchbox-input" required="">
+                        <span class="searchbox-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                      </form>
+                   </div>
                     <a href="#">India <i class="fa fa-globe" aria-hidden="true"></i></a>
                     <a href="#" class="header-cta streched-link">Request a Consultation</a>
-                </div>
+                  </div>
             </div>
         </div>
 
@@ -681,6 +807,7 @@
                                 <div class="image"><img data-flickity-lazyload-src="img/fa-thumb3.jpg" class="img-fluid rounded" alt=""></div>
                                 <div class="label">For Sustainable Industry</div>
                                 <p>Empowering future generations for Sustainable Manufacturing</p>
+                                <a class="stretched-link"></a>
                             </div>
                         </div>
                         <div class="slides residential">
@@ -712,8 +839,24 @@
         </div>
     </section>
 
-    <section class="section-two">
-        <a href="https://www.youtube.com/watch?v=Fr56GJdOFQk" data-fancybox="video-gallery"><img src="img/section2.jpg" alt="" class="img-fluid"></a>
+    <section class="section-two Decarbonizingcontent" style="background-color: #f3f3f3;"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <a href="https://www.youtube.com/watch?v=Fr56GJdOFQk" data-fancybox="video-gallery"><img src="img/decoimg.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <!-- <div class="col-lg-1"></div> -->
+                <div class="col-lg-4">
+                    <div class="title">
+                        <span>Decarbonizing India</span>
+                        Driving efficiency for India’s industries
+                    </div>
+                    <br>
+                    <p>We are innovating automation technologies that deliver high impact for the manufacturing sector while minimizing its impact on the environment. We help our customers achieve sustainable and smart manufacturing with advanced equipment that fosters energy-saving and reduces the carbon footprint of production, enhancing life for individuals and society in the process.</p>
+                </div>
+            </div>
+        </div>
+       
     </section>
 
     <section class="section-two section-cuttingedge">
@@ -739,12 +882,14 @@
                           "draggable": false,
                           "percentPosition": false,
                           "groupCells": "100%",
-                          "pageDots": false,
-                          "prevNextButtons": false
+                          "pageDots": false
                         }'>
-                    <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
-                    <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
-                    <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
+                        <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
+                        <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
+                        <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
+                        <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
+                        <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
+                        <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -754,9 +899,12 @@
                            "pageDots": false,
                            "prevNextButtons": false
                          }'>
-                      <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
-                      <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
-                      <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
+                         <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
+                         <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
+                         <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
+                         <div class="carousel-cell"><img src="img/solutionimg.jpg" alt="solutionimg"></div>
+                         <div class="carousel-cell"><img src="img/solutionimg2.jpg" alt="solutionimg"></div>
+                         <div class="carousel-cell"><img src="img/solutionimg3.jpg" alt="solutionimg"></div>
                     </div>
                   </div>
             </div>
@@ -1396,7 +1544,7 @@
                 </div>
       
                 <div class="right">
-                  <div class="contact"><a href="#">Contact Us</a></div>
+                  <div class="contact"><a href="#" class="cta">Contact Us</a></div>
                   <div class="social">
                     <ul>
                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -1433,8 +1581,8 @@
     <!--<section class="section-two p-0">
     <img src="img/btm.jpg" alt="" class="img-fluid">
    </section>-->
-   <div class="floatsticky" style="position: fixed;top: 40%; right: 0;">
-    <img src="img/floaticon.jpg" alt="floaticon">
+   <div class="floatsticky" style="position: fixed;bottom: 90px; right: 0;z-index: 2;">
+    <img src="img/floaticon.jpg" alt="floaticon" style="width: 4rem;">
    </div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -1483,24 +1631,6 @@
                 });
             });
 
-            // Accordion behavior
-            const accordionToggles = document.querySelectorAll('.accordion_toggle');
-            accordionToggles.forEach(toggle => {
-                toggle.addEventListener('click', function() {
-                    // Find the closest parent (like .leftpart or .things) and look for .lefttext inside it
-                    const leftText = this.closest('.leftpart').querySelector('.lefttext');
-
-                    if (leftText) {
-                        // Toggle display of the leftText
-                        leftText.style.display = leftText.style.display === 'block' || leftText.style.display === '' ? 'none' : 'block';
-                        // Rotate the arrow icon
-                        this.classList.toggle('rotate');
-                    } else {
-                        console.error("lefttext element not found.");
-                    }
-                });
-            });
-
         });
 
     </script>
@@ -1518,7 +1648,45 @@
                     $(this).addClass("active");
                 }
             });
+            $(".dot").click(function(){
+                // Slide up any visible lefttext and remove active class
+                $(".dot").removeClass("active");
+                
+                // Check if the next lefttext is hidden, then slide it down
+                $(this).addClass("active");
+            });
         });
+        let submitIcon = $('.searchbox-icon');
+  let inputBox = $('.searchbox-input');
+  let searchBox = $('.searchbox');
+  let submitButton = $('.searchbox-submit');
+  let isOpen = false;
+  submitIcon.click(function(){
+   if(isOpen == false){
+    searchBox.addClass('searchbox-open');
+    submitButton.css('visibility', 'visible')
+    inputBox.focus();
+    isOpen = true;
+   } else {
+    searchBox.removeClass('searchbox-open');
+    inputBox.focusout();
+    isOpen = false;
+   }
+  });
+  
+  function buttonUp(){
+ let inputVal = $('.searchbox-input').val();
+ inputVal = $.trim(inputVal).length;
+ if( inputVal !== 0){
+   //customize this line of code to show X
+  //$('.searchbox-icon').css('display','none');
+ } else {
+  $('.searchbox-input').val('');
+  $('.searchbox-icon').css('display','block');
+ }
+}
+  inputBox.keyup(buttonUp);
+
     </script>
 </body>
 
