@@ -55,7 +55,7 @@
         }
 
         p {
-            font-size: 15px;
+            font-size: 1rem;
             margin-top: 0.5rem;
             margin-bottom: 3rem;
         }
@@ -557,7 +557,7 @@
         }
         .carousel-main .carousel-cell {
         width: 100%;
-        height: 470px;
+        height: 420px;
         font-size: 5rem;
         }
         .section-cuttingedge .btngrp button.outline:hover {
@@ -568,13 +568,16 @@
         }
         .carousel-nav {
         width: 350px;
-        transform: rotate(90deg) translate(60px, -120%);
+        transform: rotate(90deg) translate(30px, -120%);
         transform-origin: left top;
         }
         @media screen and (max-width: 1200px) {
         .carousel-nav {
             transform: rotate(90deg) translate(30px, -50%);
         }
+        }
+        .section-cuttingedge {
+            padding: 5rem 0;
         }
         .carousel-nav .carousel-cell {
         /* transform: rotate(-90deg); */
@@ -636,6 +639,20 @@
             border-right: 1px solid #333;
             margin-right: 10px;
             padding-right: 5px;
+        }
+        .section-three .cards ul li .thumb .image {
+            height: 17rem;
+            overflow: hidden;
+        }
+
+        .section-three .cards ul li .thumb .image img {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s all ease-in-out;
+        }
+
+        .section-three .cards ul li .thumb .image img:hover {
+            transform: scale(1.03);
         }
         .searchbox {
             position: relative;
@@ -712,9 +729,9 @@
         }
 
         section.section-two.Decarbonizingcontent .col-lg-4 p {
-            font-size: 17px;
+            font-size: 1rem;
             color: #232d3c;
-            line-height: 1.6;
+            /* line-height: 1.6; */
             margin-bottom: 0;
         }
         .flickity-prev-next-button:hover svg {
@@ -729,6 +746,9 @@
         }
         .newsupdates .image:hover img {
             transform: scale(1.03);
+        }
+        header .header-menu {
+            padding-left: 4.688rem;
         }
     </style>
 </head>
@@ -1604,7 +1624,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const carouselWrapper = document.querySelector('.carousel_wrapper');
             const carouselInner = document.querySelectorAll('.carousel_inner');
@@ -1642,7 +1662,7 @@
 
         });
 
-    </script>
+    </script> -->
     <script>
        $(document).ready(function(){
             $(".things").click(function(){
